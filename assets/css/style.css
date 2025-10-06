@@ -908,7 +908,7 @@ main {
 }
 
 .news-date {
-  font-size: var(--fs-7);
+  font-size: var(--fs-8);
   color: var(--light-gray);
   font-weight: var(--fw-400);
 }
