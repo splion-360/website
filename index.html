@@ -26,6 +26,8 @@
     rel="stylesheet">
 </head>
 
+
+
 <body>
 
 
@@ -68,8 +70,28 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:splion360@gmail.com" class="contact-link">splion360@gmail.com</a>
+              <a href="#" id="email-link" class="contact-link">splion360@gmail.com</a>
+              <span id="copy-message" class="copy-tooltip">Copied!!</span>
+              <script>
+                const emailLink = document.getElementById('email-link');
+                const tooltip = document.getElementById('copy-message');
+
+                emailLink.addEventListener('click', async (e) => {
+                  e.preventDefault();
+                  const email = 'splion360@gmail.com';
+
+                  try {
+                    await navigator.clipboard.writeText(email);
+                    tooltip.classList.add('show');
+                    setTimeout(() => tooltip.classList.remove('show'), 1500);
+                  } catch (err) {
+                    console.error('Failed to copy: ', err);
+                  }
+                });
+              </script>
+
             </div>
+
 
           </li>
 
@@ -203,7 +225,7 @@
                 <p class="service-item-text">
                   Attending a <a href="https://luma.com/weavehacks2?tk=9CZ0Jr"> hackathon </a> in SF on Oct 11-Oct 12
                   2025.
-                  I am actively looking for teammates 🕵. <br>
+                  I am actively looking for teammates 🕵!! <br>
                   If you are interested let’s connect
                   and build something awesome together!
                 </p>

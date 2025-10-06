@@ -1925,6 +1925,28 @@ textarea.form-input::-webkit-resizer {
 }
 
 
+.contact-link {
+  cursor: pointer;
+  color: rgba(173, 216, 230, 0.9);
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: rgba(173, 216, 230, 1);
+}
+
+.copy-tooltip {
+  margin-left: 8px;
+  font-size: 0.8rem;
+  color: hsl(45, 100%, 72%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.copy-tooltip.show {
+  opacity: 1;
+}
+
 
 
 
