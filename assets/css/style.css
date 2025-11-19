@@ -914,18 +914,67 @@ main {
 }
 
 .footnote-text {
-  color: var(--light-gray);
+  color: var(--light-gray-70);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  line-height: 1.6;
-  margin-bottom: 10px;
+  text-align: center;
+  opacity: 0.5;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  margin: 40px auto 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.footnote-text:hover {
+  opacity: 0.8;
+}
+
+/**
+ * #github-contributions
+ */
+
+.github-contributions {
+  margin-bottom: 30px;
+}
+
+.contributions-title {
+  margin-bottom: 20px;
+}
+
+.contributions-wrapper {
+  background: var(--border-gradient-onyx);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  position: relative;
+  z-index: 1;
+  margin-left: -10px;
+}
+
+.contributions-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.contributions-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 
 
 
 
 /**
- * #clients 
+ * #clients
  */
 
 .clients {
