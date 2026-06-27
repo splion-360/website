@@ -1290,6 +1290,10 @@ main {
   flex-shrink: 0;
 }
 
+.tech-item .tech-logo.temporal-logo {
+  filter: invert(1);
+}
+
 .skills-content {
   display: flex;
   flex-direction: column;
