@@ -1372,6 +1372,19 @@ main {
   display: inline-block;
 }
 
+.skill-item .tech-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.skill-item .wide-logo {
+  width: 22px;
+}
+
+.monochrome-logo {
+  filter: invert(1);
+}
+
 .tech-logo[alt="ROS"] {
   background-color: white;
   border-radius: 2px;
