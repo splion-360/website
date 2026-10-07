@@ -873,6 +873,18 @@ main {
   object-fit: cover;
 }
 
+.news-logo-box {
+  display: grid;
+  place-items: center;
+  background: white;
+}
+
+.news-logo-box img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 .news-image-box img[src*="strongcompute.png"] {
   width: 60%;
   object-fit: contain;
