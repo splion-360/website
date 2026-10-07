@@ -1682,6 +1682,59 @@ main {
   width: 100%;
 }
 
+.project-video-card {
+  width: 100%;
+}
+
+.project-video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: var(--smoky-black);
+  border: 1px solid var(--jet);
+  border-radius: 16px;
+}
+
+.project-video-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-details-link {
+  display: block;
+  padding: 0 10px;
+}
+
+.project-details-link .project-title,
+.project-details-link .project-category {
+  margin-left: 0;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-title-row ion-icon {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--light-gray-70);
+  font-size: 18px;
+  transition: var(--transition-1);
+}
+
+.project-details-link:hover .project-title,
+.project-details-link:focus-visible .project-title,
+.project-details-link:hover .project-title-row ion-icon,
+.project-details-link:focus-visible .project-title-row ion-icon {
+  color: var(--orange-yellow-crayola);
+}
+
 .project-img {
   position: relative;
   width: 100%;
