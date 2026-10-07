@@ -1813,6 +1813,18 @@ main {
   transition: var(--transition-1);
 }
 
+.blog-brand-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: var(--white-2);
+}
+
+.blog-brand-banner img {
+  object-fit: contain;
+}
+
 .blog-post-item>a:hover .blog-banner-box img {
   transform: scale(1.1);
 }
